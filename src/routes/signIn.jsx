@@ -3,9 +3,9 @@ import Button from "../components/buttons/buttons";
 
 export default function SignIn() {
   return (
-    <div>
+    <main>
       <Forms/>
       <Button/>
-    </div>
+    </main>
   );
 }
