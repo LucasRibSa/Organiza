@@ -1,5 +1,5 @@
-import Forms from "../components/Forms/Forms";
-import Button from "../components/buttons/buttons";
+import Forms from "../Components/Forms/Forms";
+import Button from "../Components/buttons/buttons";
 
 export default function SignIn() {
   return (

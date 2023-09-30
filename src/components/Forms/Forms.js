@@ -1,6 +1,6 @@
 import Form from 'react-bootstrap/Form';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import '../Styles/styled.scss'
+import '../sass/styled.scss'
 
 
 export default function Forms() {
