@@ -1,6 +1,5 @@
 import Button from 'react-bootstrap/Button';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import '../Styles/styled.scss'
 
 
 export default function Buttons() {

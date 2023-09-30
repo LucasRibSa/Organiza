@@ -1,4 +1,4 @@
-import '../Styles/styled.scss'
+import './styled.scss'
 
 export default function Footer () {
     return (

@@ -39,7 +39,7 @@ $blue:    #262626 !default;
     color: #fff;
 }
 
-.form-control:enabled {
+.email:enabled, .password:enabled {
     background-color: #262626;
     color: #fff;
 }
@@ -79,15 +79,4 @@ $blue:    #262626 !default;
 
 .button-email:enabled, .button-cadaster:enabled {
     background-color: #262626;
-}
-
-.footer {
-    background-color: #262626;
-    color: #fff;
-    height: 40px;
-}
-
-.texto-footer {
-    padding: 0.5%;
-    text-align: center;
 }
