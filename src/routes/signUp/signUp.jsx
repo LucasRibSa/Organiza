@@ -1,9 +1,10 @@
 import React from 'react'
-import Cadastro from './Components/Forms'
+import Forms from './Components/Forms'
+import './styled.scss'
 
 export const SignUp = () => {
   return (
-    <Cadastro />
+    <Forms />
   )
 }
 

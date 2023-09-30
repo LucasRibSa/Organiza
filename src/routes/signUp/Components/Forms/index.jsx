@@ -1,9 +1,7 @@
 import React, { useState } from "react";
 import { Form, Button } from "react-bootstrap";
-import "../../../Components/sass/signup.scss"
 
-
-function Cadastro() {
+export const Forms = () => {
   const [nome, setNome] = useState("");
   const [email, setEmail] = useState("");
   const [senha, setSenha] = useState("");
@@ -76,5 +74,3 @@ function Cadastro() {
     </div>
   );
 }
-
-export default Cadastro;
