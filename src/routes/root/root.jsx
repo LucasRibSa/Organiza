@@ -1,5 +1,6 @@
 import { Outlet } from "react-router-dom";
 import * as S from './styles'
+import Footer from "../../Components/footer";
 
 export default function Root() {
     return (
@@ -21,6 +22,7 @@ export default function Root() {
             <div>
                 <Outlet />
             </div>
+            <Footer />
         </>
     );
 }
