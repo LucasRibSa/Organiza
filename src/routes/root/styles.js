@@ -5,6 +5,3 @@ export const NavLink = styled(Link)`
     text-decoration: none;
     color: white;
 `
-export const Ul = styled.ul`
-    margin-left: auto;
-`
