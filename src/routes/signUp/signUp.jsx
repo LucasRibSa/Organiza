@@ -1,8 +1,9 @@
 import React from 'react'
+import Cadastro from './Components/Forms'
 
 export const SignUp = () => {
   return (
-    <div>Sign Up</div>
+    <Cadastro />
   )
 }
 
