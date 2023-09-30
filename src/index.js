@@ -9,7 +9,7 @@ import {
 import Root from './routes/root/root';
 import ErrorPage from './error-page';
 import SignIn from './routes/signIn';
-import { SignUp } from './routes/signUp/signUp';
+import { SignUp } from './routes/signUp';
 import { Dashboard } from './routes/Dashboard';
 import { IncomeExpense } from './routes/IncomeExpense';
 import { Investment } from './routes/Investment';
