@@ -1,9 +1,11 @@
-import { Form } from "react-router-dom";
+import Forms from "../components/Forms/Forms";
+import Button from "../components/buttons/buttons";
 
 export default function SignIn() {
   return (
-    <div id="signin">
-      SignIn
-    </div>
+    <main>
+      <Forms/>
+      <Button/>
+    </main>
   );
 }
