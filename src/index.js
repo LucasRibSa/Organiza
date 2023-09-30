@@ -6,7 +6,7 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
-import Root from './routes/root';
+import Root from './routes/root/root';
 import ErrorPage from './error-page';
 import SignIn from './routes/signIn';
 import { SignUp } from './routes/signUp';
@@ -32,33 +32,36 @@ const router = createBrowserRouter([
         element: <SignUp />,
       },
       {
-        path: "organiza",
-        element: <App />,
-        children: [
-          {
-            path: "dashboard",
-            element: <Dashboard />,
-          },
-          {
-            path: "income-and-expense",
-            element: <IncomeExpense />,
-          },
-          {
-            path: "investment",
-            element: <Investment />,
-          },
-          {
-            path: "budget",
-            element: <Budget />,
-          },
-          {
-            path: "notification",
-            element: <Notification />,
-          },
-        ]
+
       }
     ]
   },
+  {
+    path: "organiza",
+    element: <App />,
+    children: [
+      {
+        path: "dashboard",
+        element: <Dashboard />,
+      },
+      {
+        path: "income-and-expense",
+        element: <IncomeExpense />,
+      },
+      {
+        path: "investment",
+        element: <Investment />,
+      },
+      {
+        path: "budget",
+        element: <Budget />,
+      },
+      {
+        path: "notification",
+        element: <Notification />,
+      },
+    ]
+  }
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
