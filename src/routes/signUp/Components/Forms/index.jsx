@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Form, Button } from "react-bootstrap";
+import Logo from "../Logo";
 
 export const Forms = () => {
   const [nome, setNome] = useState("");
@@ -18,6 +19,7 @@ export const Forms = () => {
 
   return (
     <div>
+      <Logo/> 
       <Form onSubmit={handleSubmit}>
         <div class="nome">
           <Form.Group controlId="nome">
@@ -31,8 +33,8 @@ export const Forms = () => {
             />
           </Form.Group>
         </div>
-        <div className="email">
-        <Form.Group controlId="email">
+        <div className="e-mail">
+        <Form.Group className="mb-2" controlId="email">
           <Form.Label>E-mail</Form.Label>
           <Form.Control
             type="email"
@@ -43,8 +45,8 @@ export const Forms = () => {
           />
         </Form.Group>
         </div>
-        <div className="senha">
-        <Form.Group controlId="senha">
+        <div className="password">
+        <Form.Group className="mb-2" controlId="senha">
           <Form.Label>Sua senha</Form.Label>
           <Form.Control
             type="password"
@@ -56,7 +58,7 @@ export const Forms = () => {
         </Form.Group>
         </div>
         <div className="senha">
-        <Form.Group controlId="senha">
+        <Form.Group className="mb-2" controlId="senha">
           <Form.Label>Confirme a senha</Form.Label>
           <Form.Control
             type="password"
