@@ -6,14 +6,14 @@ export default function Forms() {
     return (
         <div>
             <Form>
-            <div className="frame1">
+            <div className="frame1" className="container">
           <div className="title">
-            <div className="organiza">organiza</div>
-            <b className="investimento1">Investimento</b>
+            <div className="titulo1">organiza</div>
+            <b className="titulo2">Investimento</b>
           </div>
-          <div className="desejaAdicionarAlgumaInvestParent">
-            <b className="organiza">
-              Deseja adicionar alguma investimento ?
+          <div className="containerAddInvest">
+            <b>
+              Deseja adicionar algum investimento ?
             </b>
           </div>
         </div>

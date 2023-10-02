@@ -17,7 +17,7 @@ function MeuComponente() {
   return (
     <div className="button">
       <Button variant="primary" onClick={abrirModal} className="button-email" type='button' >
-        ADICIONAR INVESTIMENTO c/ modal
+        ADICIONAR INVESTIMENTO
       </Button>
 
       <Modal show={showModal} onHide={fecharModal}>
