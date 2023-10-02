@@ -3,16 +3,24 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Outlet } from 'react-router-dom'
+import { Outlet, useLocation } from 'react-router-dom'
 import * as S from './styled'
-
+const currentPath = {
+  "/organiza/dashboard": "Painel",
+  "/organiza/income-and-expense": "Receita",
+  "/organiza/investment": "Investimento",
+  "/organiza/budget": "Orçamento",
+  "/organiza/notification": "Notificações",
+}
 export const App = () => {
+  const location = useLocation();
+  console.log(location.pathname);
   return (
     <div>
       <Navbar bg="dark" data-bs-theme="dark">
         <Container>
-        <Navbar.Brand href="#home">
-        <img
+          <Navbar.Brand href="#home">
+            <img
               src="/logo_transparent-rd.png"
               width="65"
               height="40"
@@ -29,6 +37,10 @@ export const App = () => {
           </Nav>
         </Container>
       </Navbar>
+      <S.ContainerBrandTitle>
+        <S.BrandName>organiza</S.BrandName>
+        <S.Title>{currentPath[location.pathname]}</S.Title>
+      </S.ContainerBrandTitle>
       <Outlet />
     </div>
   )
