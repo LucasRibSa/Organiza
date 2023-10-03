@@ -12,7 +12,7 @@ import SignIn from './routes/signIn';
 import { SignUp } from './routes/signUp';
 import { Dashboard } from './routes/Dashboard';
 import { IncomeExpense } from './routes/IncomeExpense';
-import { Investment } from './routes/Investment';
+import Investment from './routes/investment';
 import { Budget } from './routes/Budget';
 import { Notification } from './routes/Notification';
 import { App } from './routes/App';
@@ -32,6 +32,10 @@ const router = createBrowserRouter([
         element: <SignUp />,
       },
       {
+        path: "investment",
+        element: <Investment />,
+      },
+      {
 
       }
     ]
@@ -49,12 +53,12 @@ const router = createBrowserRouter([
         element: <IncomeExpense />,
       },
       {
-        path: "investment",
-        element: <Investment />,
-      },
-      {
         path: "budget",
         element: <Budget />,
+      },
+      {
+        path: "investment",
+        element: <Investment />,
       },
       {
         path: "notification",
