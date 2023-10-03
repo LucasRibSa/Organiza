@@ -57,6 +57,10 @@ const router = createBrowserRouter([
         element: <Budget />,
       },
       {
+        path: "investment",
+        element: <Investment />,
+      },
+      {
         path: "notification",
         element: <Notification />,
       },
